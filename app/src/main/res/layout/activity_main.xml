@@ -88,11 +88,12 @@
 
         <TextView
             android:id="@+id/zero"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/Order_Price"
             android:layout_marginStart="65dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="18dp"
             android:text="0"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
@@ -103,7 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
-            android:layout_marginTop="33dp"
+            android:layout_marginTop="48dp"
             android:layout_toRightOf="@+id/zero"
             android:text="$"
             android:textColor="#FFFFFF"
@@ -123,7 +124,8 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button_minus"
+            android:id="@+id/minusButton"
+            android:onClick="decreaseQuantity"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_below="@+id/quantity"
@@ -134,12 +136,13 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/zero2"
+            android:id="@+id/quantityTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/Order_Price"
-            android:layout_marginStart="248dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/minusButton"
             android:text="0"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
@@ -147,13 +150,14 @@
 
 
         <Button
-            android:id="@+id/button_plus"
+            android:id="@+id/plusButton"
+            android:onClick="increaseQuantity"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_below="@+id/quantity"
             android:layout_marginStart="50dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/button_minus"
+            android:layout_toRightOf="@+id/minusButton"
             android:text="+"
             android:textSize="20sp" />
 
