@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background"
     android:orientation="vertical"
+    android:textColor="#FFFFFF"
     tools:context=".MainActivity">
 
 
@@ -54,13 +54,15 @@
         android:layout_marginRight="20dp"
         android:gravity="end"
         android:text="Select Item"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        />
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -82,7 +84,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
             android:text="Order Price"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -95,7 +97,7 @@
             android:layout_marginStart="65dp"
             android:layout_marginTop="18dp"
             android:text="0"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -107,7 +109,7 @@
             android:layout_marginTop="48dp"
             android:layout_toRightOf="@+id/zero"
             android:text="$"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -119,7 +121,7 @@
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/Order_Price"
             android:text="Quantity"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -144,7 +146,7 @@
             android:layout_marginTop="18dp"
             android:layout_toRightOf="@+id/minusButton"
             android:text="0"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
